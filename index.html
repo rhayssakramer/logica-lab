@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica Lab</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="./"><img src="./img/logo.png" alt="Logo" class="logo-icon"></a>
+                <h1>LOGICALAB</h1>
+            </div>
+            <nav class="nav">
+                <a href="#como-funciona">Sobre</a>
+                <a href="#aulas">Aulas</a>
+                <a href="#hacks">Dicas Lógica</a>
+                <a href="#recursos">Recursos</a>
+                <a href="https://github.com/rhayssakramer/logica-lab" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="sobre">
+        <div class="hero-content">
+            <h1>Aprenda Lógica do Zero</h1>
+            <p>Conteúdo interativo e prático sobre lógica de programação, algoritmos e conceitos fundamentais. Sem frameworks, sem complicação. Você abre no navegador e mexe.</p>
+            
+            <!-- STATS COMPACTO -->
+            <div class="stats stats-compact">
+                <div class="stat-item">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Aulas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Conceitos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Possibilidades</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.querySelector('#aulas').scrollIntoView({behavior: 'smooth'})">Ver as aulas</button>
+                <button class="btn btn-secondary" onclick="document.querySelector('#como-funciona').scrollIntoView({behavior: 'smooth'})">Como funciona</button>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <img src="./img/logica-3d.png" alt="Lógica Code" class="hero-image">
+        </div>
+    </section>
+
+     <!-- COMO FUNCIONA -->
+    <section class="como-funciona" id="como-funciona">
+        <div class="como-funciona-header">
+            <span class="como-label">O QUE É ISSO AQUI</span>
+            <h2>Um curso de Lógica <span class="destaque">com formato inovador</span>.</h2>
+            <p>Cada aula é uma página interativa de tela única. Sem PDF, sem slide cansado, sem framework. Você abre no navegador e mexe. Os conceitos se recalculam ao vivo, os exemplos respondem ao mouse, e tudo é explicado de forma criativa e prática.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Interativo de verdade</h3>
+                <p>Simuladores, diagramas clicáveis e visualizações. Aprende mexendo.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📦</div>
+                <h3>Zero dependências</h3>
+                <p>HTML, CSS e JS puro. Abre direto no navegador, funciona offline.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Conceitos práticos</h3>
+                <p>Exemplos reais do dia a dia. Entender a teoria através da prática.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Lógica pura</h3>
+                <p>Independente de linguagem. Aprenda os fundamentos de verdade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AULAS -->
+    <section class="aulas" id="aulas">
+        <div class="aulas-header">
+            <span class="aulas-label">AS AULAS</span>
+            <h2>Escolha uma e <span class="destaque">simbora.</span></h2>
+            <p>Cada card é uma aula completa, independente. Pode começar pela 1 ou pular pra aula que te interessa mais. Os tópicos cobrem desde fundamentos até estruturas avançadas. A aula 10 é dedicada aos <strong>padrões e melhores práticas</strong> que poucos conhecem.</p>
+        </div>
+        <div class="aulas-grid">
+            <!-- Cards gerados dinamicamente por JavaScript -->
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="hacks" id="hacks">
+        <h2>Dicas de <span class="destaque">Lógica</span> que Você Precisa Saber</h2>
+        <div class="hacks-container">
+            <div class="hack-item">
+                <h4>1. Divida para Conquistar</h4>
+                <p>Quebre problemas complexos em partes menores e mais simples de resolver.</p>
+                <code>problema_grande = [sub_problema_1, sub_problema_2, sub_problema_3]</code>
+            </div>
+            <div class="hack-item">
+                <h4>2. Pseudocódigo Antes do Código</h4>
+                <p>Escreva a lógica em linguagem natural antes de programar. Economiza tempo.</p>
+                <code>se (idade >= 18) { vai_pra_faculdade } senão { vai_pra_escola }</code>
+            </div>
+            <div class="hack-item">
+                <h4>3. Trace o Código Manualmente</h4>
+                <p>Execute o código passo a passo no papel para entender o fluxo.</p>
+                <code>x = 5; y = 3; resultado = x + y // resultado = 8</code>
+            </div>
+            <div class="hack-item">
+                <h4>4. Use Fluxogramas</h4>
+                <p>Visualize decisões e loops com diagramas antes de programar.</p>
+                <code>[ Início ] → [ Decisão ] → [ Ação ] → [ Fim ]</code>
+            </div>
+            <div class="hack-item">
+                <h4>5. Nomes Descritivos</h4>
+                <p>Use nomes de variáveis que explicam o que armazenam.</p>
+                <code>idade_usuario (ao invés de: a) | total_vendas (ao invés de: t)</code>
+            </div>
+            <div class="hack-item">
+                <h4>6. Teste Casos Extremos</h4>
+                <p>Sempre teste seu código com valores mínimos, máximos e nulos.</p>
+                <code>entrada = [0, 1, -1, 999, null, "texto inválido"]</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="recursos" id="recursos">
+        <div class="recursos-header">
+            <span class="recursos-label">REFERÊNCIA</span>
+            <h2>Recursos para <span class="destaque">aprofundar</span>.</h2>
+            <p>Links, ferramentas e documentações para você ir além das aulas e explorar lógica em profundidade.</p>
+        </div>
+
+        <div class="recursos-grid">
+            <div class="recurso-card">
+                <div class="recurso-icon">📚</div>
+                <h3>Estruturas de Dados</h3>
+                <p>Guia completo sobre arrays, listas, pilhas, filas e outras estruturas.</p>
+                <a href="https://en.wikipedia.org/wiki/Data_structure" target="_blank" class="recurso-link">Saiba Mais ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">🔍</div>
+                <h3>Algoritmos</h3>
+                <p>Análise de algoritmos, ordenação, busca e otimização.</p>
+                <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank" class="recurso-link">GeeksforGeeks ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">⚙️</div>
+                <h3>Complexity Analysis</h3>
+                <p>Entenda O(n), O(log n), O(n²) e outras notações.</p>
+                <a href="https://en.wikipedia.org/wiki/Big_O_notation" target="_blank" class="recurso-link">Big O Notation ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">✔️</div>
+                <h3>Fluxogramas</h3>
+                <p>Ferramenta para desenhar e entender fluxos lógicos.</p>
+                <a href="https://www.draw.io/" target="_blank" class="recurso-link">Draw.io ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">🎨</div>
+                <h3>Visualizadores</h3>
+                <p>Ferramentas para visualizar algoritmos e estruturas de dados.</p>
+                <a href="https://visualgo.net/pt" target="_blank" class="recurso-link">VisuAlgo ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">📱</div>
+                <h3>Problemas de Prática</h3>
+                <p>Plataformas com desafios de lógica para treinar.</p>
+                <a href="https://www.codewars.com/" target="_blank" class="recurso-link">Codewars ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">🚀</div>
+                <h3>Recursão</h3>
+                <p>Guia completo sobre recursão e como usá-la corretamente.</p>
+                <a href="https://www.geeksforgeeks.org/recursion/" target="_blank" class="recurso-link">Recursão Explicada ↗</a>
+            </div>
+
+            <div class="recurso-card">
+                <div class="recurso-icon">✨</div>
+                <h3>Design Patterns</h3>
+                <p>Padrões de design para resolver problemas comuns.</p>
+                <a href="https://refactoring.guru/design-patterns" target="_blank" class="recurso-link">Refactoring Guru ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://github.com/rhayssakramer/logica-lab">Lógica Lab</a>. Feito com 💜 para quem quer aprender lógica de verdade.</p>
+            <div class="footer-links">
+                <a href="#como-funciona">Sobre</a>
+                <a href="https://rhayssakramer.vercel.app/">Contato</a>
+                <a href="https://github.com/rhayssakramer" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">
+        <img src="./img/next.png" alt="↑">
+    </a>
+
+    <script src="js/aulas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
